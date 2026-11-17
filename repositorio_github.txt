@@ -2,4 +2,4 @@
 Autor: Bernardo Klein Heitz
 URL: https://github.com/bengo501/Trabalho3-Computacao-Paralela
 Branch: main
-Commit: d93e99bd39debd96452925bd8ba4b1fc7acf0133
+Commit: d0e35b981fdfbe8f85007a5043c210a4e7317d69
