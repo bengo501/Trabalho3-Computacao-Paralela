@@ -1,0 +1,53 @@
+rm -rf bin
+mkdir -p bin
+gcc -O2 -std=c11 -Wall -Wextra -o bin/sequencial src/sequencial.c src/comum.c -lrt
+mpicc -O2 -std=c11 -Wall -Wextra -o bin/arvore src/arvore.c src/comum.c
+mpicc -O2 -std=c11 -Wall -Wextra -o bin/balanceada src/balanceada.c src/comum.c
+atlantica[03-04]
+== srun -N 1 -n 1 ./bin/sequencial 40 ==
+n=40 delta=40 tempo=0.000003 verificacao=OK
+
+== srun -N 1 -n 1 ./bin/sequencial 40 10 ==
+n=40 delta=10 tempo=0.000003 verificacao=OK
+
+== srun -N 1 -n 1 ./bin/sequencial 41 11 ==
+n=41 delta=11 tempo=0.000003 verificacao=OK
+
+== srun -N 1 -n 1 ./bin/sequencial 40 balanceada 4 ==
+n=40 arvore=balanceada p=4 tempo=0.000001 verificacao=OK
+
+== srun -N 1 -n 1 ./bin/sequencial 40 balanceada 3 ==
+n=40 arvore=balanceada p=3 tempo=0.000001 verificacao=OK
+
+== srun -N 2 -n 7 --distribution=block ./bin/arvore 40 10 ==
+resultado versao=arvore n=40 delta=10 p=7 tempo=0.020677 verificacao=OK
+
+== srun -N 2 -n 7 --distribution=block ./bin/arvore 41 11 ==
+resultado versao=arvore n=41 delta=11 p=7 tempo=0.030645 verificacao=OK
+
+== srun -N 2 -n 7 --distribution=block ./bin/arvore 40 niveis 2 ==
+resultado versao=arvore n=40 delta=10 p=7 tempo=0.020731 verificacao=OK
+
+== srun -N 2 -n 1 --distribution=block ./bin/arvore 1000 1000 ==
+srun: Warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+resultado versao=arvore n=1000 delta=1000 p=1 tempo=0.000978 verificacao=OK
+
+== srun -N 2 -n 4 --distribution=block ./bin/balanceada 40 ==
+resultado versao=balanceada n=40 p=4 tempo=0.020496 verificacao=OK
+
+== srun -N 2 -n 3 --distribution=block ./bin/balanceada 40 ==
+resultado versao=balanceada n=40 p=3 tempo=0.020629 verificacao=OK
+
+== srun -N 2 -n 31 --distribution=block ./bin/balanceada 40 ==
+resultado versao=balanceada n=40 p=31 tempo=0.020824 verificacao=OK
+
+== srun -N 2 -n 32 --distribution=block ./bin/balanceada 40 ==
+resultado versao=balanceada n=40 p=32 tempo=0.020695 verificacao=OK
+
+== srun -N 2 -n 7 --distribution=block ./bin/arvore 40 10 ==
+resultado versao=arvore n=40 delta=10 p=7 tempo=0.020541 verificacao=OK
+
+== srun -O -N 2 -n 63 --distribution=block ./bin/arvore 100000 3125 ==
+resultado versao=arvore n=100000 delta=3125 p=63 tempo=0.141016 verificacao=OK
+
+verificacao do cluster terminou

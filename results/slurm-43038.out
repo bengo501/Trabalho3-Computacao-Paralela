@@ -1,0 +1,272 @@
+rm -rf bin
+mkdir -p bin
+gcc -O2 -std=c11 -Wall -Wextra -o bin/sequencial src/sequencial.c src/comum.c -lrt
+mpicc -O2 -std=c11 -Wall -Wextra -o bin/arvore src/arvore.c src/comum.c
+mpicc -O2 -std=c11 -Wall -Wextra -o bin/balanceada src/balanceada.c src/comum.c
+atlantica[03-04]
+calibracao n=100000
+100000 10.006453
+estimado a partir de n=100000 tempo=10.006
+calibracao n=212064
+212064 45.344278
+medido 45.344 s
+212064
+t1 n=212064 delta=212064 p=1 rep=1
+t1 n=212064 delta=212064 p=1 rep=2
+t1 n=212064 delta=212064 p=1 rep=3
+t1 n=212064 delta=212064 p=1 rep=4
+t1 n=212064 delta=212064 p=1 rep=5
+t1 n=212064 delta=212064 p=1 rep=6
+t1 n=212064 delta=212064 p=1 rep=7
+t1 n=212064 delta=212064 p=1 rep=8
+t1 n=212064 delta=212064 p=1 rep=9
+t1 n=212064 delta=212064 p=1 rep=10
+arvore n=212064 delta=212064 p=1 yield=0 rep=1
+arvore n=212064 delta=212064 p=1 yield=0 rep=2
+arvore n=212064 delta=212064 p=1 yield=0 rep=3
+arvore n=212064 delta=212064 p=1 yield=0 rep=4
+arvore n=212064 delta=212064 p=1 yield=0 rep=5
+arvore n=212064 delta=212064 p=1 yield=0 rep=6
+arvore n=212064 delta=212064 p=1 yield=0 rep=7
+arvore n=212064 delta=212064 p=1 yield=0 rep=8
+arvore n=212064 delta=212064 p=1 yield=0 rep=9
+arvore n=212064 delta=212064 p=1 yield=0 rep=10
+t1_delta n=212064 delta=106032 p=3 rep=1
+t1_delta n=212064 delta=106032 p=3 rep=2
+t1_delta n=212064 delta=106032 p=3 rep=3
+t1_delta n=212064 delta=106032 p=3 rep=4
+t1_delta n=212064 delta=106032 p=3 rep=5
+t1_delta n=212064 delta=106032 p=3 rep=6
+t1_delta n=212064 delta=106032 p=3 rep=7
+t1_delta n=212064 delta=106032 p=3 rep=8
+t1_delta n=212064 delta=106032 p=3 rep=9
+t1_delta n=212064 delta=106032 p=3 rep=10
+arvore n=212064 delta=106032 p=3 yield=0 rep=1
+arvore n=212064 delta=106032 p=3 yield=0 rep=2
+arvore n=212064 delta=106032 p=3 yield=0 rep=3
+arvore n=212064 delta=106032 p=3 yield=0 rep=4
+arvore n=212064 delta=106032 p=3 yield=0 rep=5
+arvore n=212064 delta=106032 p=3 yield=0 rep=6
+arvore n=212064 delta=106032 p=3 yield=0 rep=7
+arvore n=212064 delta=106032 p=3 yield=0 rep=8
+arvore n=212064 delta=106032 p=3 yield=0 rep=9
+arvore n=212064 delta=106032 p=3 yield=0 rep=10
+t1_delta n=212064 delta=53016 p=7 rep=1
+t1_delta n=212064 delta=53016 p=7 rep=2
+t1_delta n=212064 delta=53016 p=7 rep=3
+t1_delta n=212064 delta=53016 p=7 rep=4
+t1_delta n=212064 delta=53016 p=7 rep=5
+t1_delta n=212064 delta=53016 p=7 rep=6
+t1_delta n=212064 delta=53016 p=7 rep=7
+t1_delta n=212064 delta=53016 p=7 rep=8
+t1_delta n=212064 delta=53016 p=7 rep=9
+t1_delta n=212064 delta=53016 p=7 rep=10
+arvore n=212064 delta=53016 p=7 yield=0 rep=1
+arvore n=212064 delta=53016 p=7 yield=0 rep=2
+arvore n=212064 delta=53016 p=7 yield=0 rep=3
+arvore n=212064 delta=53016 p=7 yield=0 rep=4
+arvore n=212064 delta=53016 p=7 yield=0 rep=5
+arvore n=212064 delta=53016 p=7 yield=0 rep=6
+arvore n=212064 delta=53016 p=7 yield=0 rep=7
+arvore n=212064 delta=53016 p=7 yield=0 rep=8
+arvore n=212064 delta=53016 p=7 yield=0 rep=9
+arvore n=212064 delta=53016 p=7 yield=0 rep=10
+t1_delta n=212064 delta=26508 p=15 rep=1
+t1_delta n=212064 delta=26508 p=15 rep=2
+t1_delta n=212064 delta=26508 p=15 rep=3
+t1_delta n=212064 delta=26508 p=15 rep=4
+t1_delta n=212064 delta=26508 p=15 rep=5
+t1_delta n=212064 delta=26508 p=15 rep=6
+t1_delta n=212064 delta=26508 p=15 rep=7
+t1_delta n=212064 delta=26508 p=15 rep=8
+t1_delta n=212064 delta=26508 p=15 rep=9
+t1_delta n=212064 delta=26508 p=15 rep=10
+arvore n=212064 delta=26508 p=15 yield=0 rep=1
+arvore n=212064 delta=26508 p=15 yield=0 rep=2
+arvore n=212064 delta=26508 p=15 yield=0 rep=3
+arvore n=212064 delta=26508 p=15 yield=0 rep=4
+arvore n=212064 delta=26508 p=15 yield=0 rep=5
+arvore n=212064 delta=26508 p=15 yield=0 rep=6
+arvore n=212064 delta=26508 p=15 yield=0 rep=7
+arvore n=212064 delta=26508 p=15 yield=0 rep=8
+arvore n=212064 delta=26508 p=15 yield=0 rep=9
+arvore n=212064 delta=26508 p=15 yield=0 rep=10
+t1_delta n=212064 delta=13254 p=31 rep=1
+t1_delta n=212064 delta=13254 p=31 rep=2
+t1_delta n=212064 delta=13254 p=31 rep=3
+t1_delta n=212064 delta=13254 p=31 rep=4
+t1_delta n=212064 delta=13254 p=31 rep=5
+t1_delta n=212064 delta=13254 p=31 rep=6
+t1_delta n=212064 delta=13254 p=31 rep=7
+t1_delta n=212064 delta=13254 p=31 rep=8
+t1_delta n=212064 delta=13254 p=31 rep=9
+t1_delta n=212064 delta=13254 p=31 rep=10
+arvore n=212064 delta=13254 p=31 yield=0 rep=1
+arvore n=212064 delta=13254 p=31 yield=0 rep=2
+arvore n=212064 delta=13254 p=31 yield=0 rep=3
+arvore n=212064 delta=13254 p=31 yield=0 rep=4
+arvore n=212064 delta=13254 p=31 yield=0 rep=5
+arvore n=212064 delta=13254 p=31 yield=0 rep=6
+arvore n=212064 delta=13254 p=31 yield=0 rep=7
+arvore n=212064 delta=13254 p=31 yield=0 rep=8
+arvore n=212064 delta=13254 p=31 yield=0 rep=9
+arvore n=212064 delta=13254 p=31 yield=0 rep=10
+t1_balanceada n=212064 delta=0 p=2 rep=1
+t1_balanceada n=212064 delta=0 p=2 rep=2
+t1_balanceada n=212064 delta=0 p=2 rep=3
+t1_balanceada n=212064 delta=0 p=2 rep=4
+t1_balanceada n=212064 delta=0 p=2 rep=5
+t1_balanceada n=212064 delta=0 p=2 rep=6
+t1_balanceada n=212064 delta=0 p=2 rep=7
+t1_balanceada n=212064 delta=0 p=2 rep=8
+t1_balanceada n=212064 delta=0 p=2 rep=9
+t1_balanceada n=212064 delta=0 p=2 rep=10
+balanceada n=212064 delta=0 p=2 yield=0 rep=1
+balanceada n=212064 delta=0 p=2 yield=0 rep=2
+balanceada n=212064 delta=0 p=2 yield=0 rep=3
+balanceada n=212064 delta=0 p=2 yield=0 rep=4
+balanceada n=212064 delta=0 p=2 yield=0 rep=5
+balanceada n=212064 delta=0 p=2 yield=0 rep=6
+balanceada n=212064 delta=0 p=2 yield=0 rep=7
+balanceada n=212064 delta=0 p=2 yield=0 rep=8
+balanceada n=212064 delta=0 p=2 yield=0 rep=9
+balanceada n=212064 delta=0 p=2 yield=0 rep=10
+t1_balanceada n=212064 delta=0 p=4 rep=1
+t1_balanceada n=212064 delta=0 p=4 rep=2
+t1_balanceada n=212064 delta=0 p=4 rep=3
+t1_balanceada n=212064 delta=0 p=4 rep=4
+t1_balanceada n=212064 delta=0 p=4 rep=5
+t1_balanceada n=212064 delta=0 p=4 rep=6
+t1_balanceada n=212064 delta=0 p=4 rep=7
+t1_balanceada n=212064 delta=0 p=4 rep=8
+t1_balanceada n=212064 delta=0 p=4 rep=9
+t1_balanceada n=212064 delta=0 p=4 rep=10
+balanceada n=212064 delta=0 p=4 yield=0 rep=1
+balanceada n=212064 delta=0 p=4 yield=0 rep=2
+balanceada n=212064 delta=0 p=4 yield=0 rep=3
+balanceada n=212064 delta=0 p=4 yield=0 rep=4
+balanceada n=212064 delta=0 p=4 yield=0 rep=5
+balanceada n=212064 delta=0 p=4 yield=0 rep=6
+balanceada n=212064 delta=0 p=4 yield=0 rep=7
+balanceada n=212064 delta=0 p=4 yield=0 rep=8
+balanceada n=212064 delta=0 p=4 yield=0 rep=9
+balanceada n=212064 delta=0 p=4 yield=0 rep=10
+t1_balanceada n=212064 delta=0 p=8 rep=1
+t1_balanceada n=212064 delta=0 p=8 rep=2
+t1_balanceada n=212064 delta=0 p=8 rep=3
+t1_balanceada n=212064 delta=0 p=8 rep=4
+t1_balanceada n=212064 delta=0 p=8 rep=5
+t1_balanceada n=212064 delta=0 p=8 rep=6
+t1_balanceada n=212064 delta=0 p=8 rep=7
+t1_balanceada n=212064 delta=0 p=8 rep=8
+t1_balanceada n=212064 delta=0 p=8 rep=9
+t1_balanceada n=212064 delta=0 p=8 rep=10
+balanceada n=212064 delta=0 p=8 yield=0 rep=1
+balanceada n=212064 delta=0 p=8 yield=0 rep=2
+balanceada n=212064 delta=0 p=8 yield=0 rep=3
+balanceada n=212064 delta=0 p=8 yield=0 rep=4
+balanceada n=212064 delta=0 p=8 yield=0 rep=5
+balanceada n=212064 delta=0 p=8 yield=0 rep=6
+balanceada n=212064 delta=0 p=8 yield=0 rep=7
+balanceada n=212064 delta=0 p=8 yield=0 rep=8
+balanceada n=212064 delta=0 p=8 yield=0 rep=9
+balanceada n=212064 delta=0 p=8 yield=0 rep=10
+t1_balanceada n=212064 delta=0 p=16 rep=1
+t1_balanceada n=212064 delta=0 p=16 rep=2
+t1_balanceada n=212064 delta=0 p=16 rep=3
+t1_balanceada n=212064 delta=0 p=16 rep=4
+t1_balanceada n=212064 delta=0 p=16 rep=5
+t1_balanceada n=212064 delta=0 p=16 rep=6
+t1_balanceada n=212064 delta=0 p=16 rep=7
+t1_balanceada n=212064 delta=0 p=16 rep=8
+t1_balanceada n=212064 delta=0 p=16 rep=9
+t1_balanceada n=212064 delta=0 p=16 rep=10
+balanceada n=212064 delta=0 p=16 yield=0 rep=1
+balanceada n=212064 delta=0 p=16 yield=0 rep=2
+balanceada n=212064 delta=0 p=16 yield=0 rep=3
+balanceada n=212064 delta=0 p=16 yield=0 rep=4
+balanceada n=212064 delta=0 p=16 yield=0 rep=5
+balanceada n=212064 delta=0 p=16 yield=0 rep=6
+balanceada n=212064 delta=0 p=16 yield=0 rep=7
+balanceada n=212064 delta=0 p=16 yield=0 rep=8
+balanceada n=212064 delta=0 p=16 yield=0 rep=9
+balanceada n=212064 delta=0 p=16 yield=0 rep=10
+t1_balanceada n=212064 delta=0 p=32 rep=1
+t1_balanceada n=212064 delta=0 p=32 rep=2
+t1_balanceada n=212064 delta=0 p=32 rep=3
+t1_balanceada n=212064 delta=0 p=32 rep=4
+t1_balanceada n=212064 delta=0 p=32 rep=5
+t1_balanceada n=212064 delta=0 p=32 rep=6
+t1_balanceada n=212064 delta=0 p=32 rep=7
+t1_balanceada n=212064 delta=0 p=32 rep=8
+t1_balanceada n=212064 delta=0 p=32 rep=9
+t1_balanceada n=212064 delta=0 p=32 rep=10
+balanceada n=212064 delta=0 p=32 yield=0 rep=1
+balanceada n=212064 delta=0 p=32 yield=0 rep=2
+balanceada n=212064 delta=0 p=32 yield=0 rep=3
+balanceada n=212064 delta=0 p=32 yield=0 rep=4
+balanceada n=212064 delta=0 p=32 yield=0 rep=5
+balanceada n=212064 delta=0 p=32 yield=0 rep=6
+balanceada n=212064 delta=0 p=32 yield=0 rep=7
+balanceada n=212064 delta=0 p=32 yield=0 rep=8
+balanceada n=212064 delta=0 p=32 yield=0 rep=9
+balanceada n=212064 delta=0 p=32 yield=0 rep=10
+t1_balanceada n=212064 delta=0 p=31 rep=1
+t1_balanceada n=212064 delta=0 p=31 rep=2
+t1_balanceada n=212064 delta=0 p=31 rep=3
+t1_balanceada n=212064 delta=0 p=31 rep=4
+t1_balanceada n=212064 delta=0 p=31 rep=5
+t1_balanceada n=212064 delta=0 p=31 rep=6
+t1_balanceada n=212064 delta=0 p=31 rep=7
+t1_balanceada n=212064 delta=0 p=31 rep=8
+t1_balanceada n=212064 delta=0 p=31 rep=9
+t1_balanceada n=212064 delta=0 p=31 rep=10
+balanceada n=212064 delta=0 p=31 yield=0 rep=1
+balanceada n=212064 delta=0 p=31 yield=0 rep=2
+balanceada n=212064 delta=0 p=31 yield=0 rep=3
+balanceada n=212064 delta=0 p=31 yield=0 rep=4
+balanceada n=212064 delta=0 p=31 yield=0 rep=5
+balanceada n=212064 delta=0 p=31 yield=0 rep=6
+balanceada n=212064 delta=0 p=31 yield=0 rep=7
+balanceada n=212064 delta=0 p=31 yield=0 rep=8
+balanceada n=212064 delta=0 p=31 yield=0 rep=9
+balanceada n=212064 delta=0 p=31 yield=0 rep=10
+versao n delta p yield reps mediana minimo maximo
+arvore 212064 13254 31 0 10 0.3537 0.3222 0.3950
+arvore 212064 26508 15 0 10 0.7701 0.7544 0.7876
+arvore 212064 53016 7 0 10 2.8500 2.8245 2.8984
+arvore 212064 106032 3 0 10 11.2883 11.2780 11.3002
+arvore 212064 212064 1 0 10 45.2959 45.2828 45.3265
+balanceada 212064 0 2 0 10 22.5542 22.5367 22.5796
+balanceada 212064 0 4 0 10 5.6136 5.5990 5.6329
+balanceada 212064 0 8 0 10 1.4213 1.4017 1.4323
+balanceada 212064 0 16 0 10 0.3774 0.3726 0.3920
+balanceada 212064 0 31 0 10 0.2217 0.2200 0.2239
+balanceada 212064 0 32 0 10 0.1649 0.1638 0.1738
+t1 212064 212064 1 0 10 45.3297 45.3162 45.3504
+t1_balanceada 212064 0 2 0 10 22.5299 22.5184 22.5560
+t1_balanceada 212064 0 4 0 10 11.1960 11.1616 11.2079
+t1_balanceada 212064 0 8 0 10 5.5235 5.5177 5.5302
+t1_balanceada 212064 0 16 0 10 2.6885 2.6815 2.6976
+t1_balanceada 212064 0 31 0 10 1.3514 1.3408 1.3598
+t1_balanceada 212064 0 32 0 10 1.2610 1.2499 1.2783
+t1_delta 212064 13254 31 0 10 2.6906 2.6685 2.6937
+t1_delta 212064 26508 15 0 10 5.5215 5.5162 5.5278
+t1_delta 212064 53016 7 0 10 11.1598 11.1338 11.1845
+t1_delta 212064 106032 3 0 10 22.5331 22.5181 22.5497
+
+T1 mediana = 45.3297 s   n = 212064   reps = 10
+
+versao p yield Tp T1delta S Sdelta E ganho_algoritmo
+arvore 31 0 0.3537 2.6906 128.163 7.607 0.245 16.848
+arvore 15 0 0.7701 5.5215 58.861 7.170 0.478 8.210
+arvore 7 0 2.8500 11.1598 15.905 3.916 0.559 4.062
+arvore 3 0 11.2883 22.5331 4.016 1.996 0.665 2.012
+arvore 1 0 45.2959 45.3297 1.001 1.001 1.001 1.000
+balanceada 2 0 22.5542 22.5299 2.010 0.999 0.499 2.012
+balanceada 4 0 5.6136 11.1960 8.075 1.994 0.499 4.049
+balanceada 8 0 1.4213 5.5235 31.892 3.886 0.486 8.207
+balanceada 16 0 0.3774 2.6885 120.126 7.125 0.445 16.861
+balanceada 31 0 0.2217 1.3514 204.508 6.097 0.197 33.544
+balanceada 32 0 0.1649 1.2610 274.968 7.649 0.239 35.947
+campanha principal terminou
