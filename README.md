@@ -3,7 +3,7 @@
 Ordenação de um vetor em ordem decrescente, com Bubble Sort nas folhas e intercalação na subida da árvore. Duas versões paralelas (árvore original e árvore balanceada) e as referências sequenciais pedidas pelo enunciado.
 
 - Disciplina: Computação Paralela e Distribuída (PUCRS)
-- Autor: Bernardo Klein Heitz
+- Aluno: Bernardo Klein Heitz
 - Repositório: https://github.com/bengo501/Trabalho3-Computacao-Paralela
 - Cluster: Atlântica (LAD), nós `atlantica03` e `atlantica04`, `--exclusive`
 
